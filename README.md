@@ -1,74 +1,33 @@
-# React + TypeScript + Vite
+# Autoflex FrontEnd
+Este projeto foi utilizado para um teste prático para a Autoflex. A arquitetura utilizada é `React` com Vite.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Pré-requisito
+- React (v19.2.0)
+- Node.js (v11.10.0)
+- Vite (v7.3.1)
 
-Currently, two official plugins are available:
+Se você clicar nos cards abaixo, ele leva para o site da documentação/download dos requisitos listados acima
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+[![Node.js](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white)](https://nodejs.org/en/download/prebuilt-installer)
+[![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://legacy.reactjs.org/docs/getting-started.html)
+[![Vite](https://img.shields.io/badge/Vite-370A7F?style=for-the-badge&logo=vite&logoColor=white)](https://vite.dev/guide/)
 
-## React Compiler
+Foram utilizados algumas ferramentas, sendo elas o Vite, TailwindCSS, Motion (Framer-Motion) e Shadcn para mantar uma ótima UX/UI, agilizando o desenvolvimento.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Inicialização do frond-end
 
-## Expanding the ESLint configuration
+### É um requisito obrigatório para iniciar o FrontEnd:
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- Após o clone do projeto, deverá abrir o mesmo e rodar no terminal o comando “`npm install`” para instalar as bibliotecas;
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+  ```console
+  npm install
+  ```
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+- Para finalizar, inicializar o projeto com o comando “`npm run dev`”.
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+  ```console
+  npm run dev
+  ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
-# autoflex-front-end
+Após irá abrir um link no navegador de forma local neste formato: http://localhost:5173/
