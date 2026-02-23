@@ -86,7 +86,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               initial={{ height: 0, opacity: 0 }}
               animate={{ height: 'auto', opacity: 1 }}
               exit={{ height: 0, opacity: 0 }}
-              className="md:hidden border-t overflow-hidden"
+              className="md:hidden border-t overflow-hidden max-md:mb-2"
             >
               <div className="container py-2 flex flex-col gap-1">
                 {navItems.map((item) => (

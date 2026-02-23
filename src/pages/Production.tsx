@@ -127,15 +127,15 @@ export default function ProductionPage() {
             </Card>
           </motion.tr>
         ))}
-
-        {production.length === 0 && (
-          <div className="mt-4 flex items-center gap-2 text-destructive text-xs font-medium bg-destructive/10 p-2 rounded">
-            {' '}
+      </div>
+      {production.length === 0 && (
+        <div className="mt-4 flex items-center justify-center gap-2">
+          <div className="flex items-center gap-2 text-destructive text-xs font-medium bg-destructive/10 p-2 rounded">
             <AlertTriangle className="h-3 w-3" />
             Não é possível fazer nenhuma produção
           </div>
-        )}
-      </div>
+        </div>
+      )}
     </div>
   );
 }

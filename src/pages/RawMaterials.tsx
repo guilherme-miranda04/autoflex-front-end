@@ -129,7 +129,7 @@ export default function RawMaterialsPage() {
             setCode('');
             setName('');
             setStockQuantity(0);
-            return `Raw Material ${data.name} successfully updated!`;
+            return `${data.name} successfully updated!`;
           },
           error: (err) => {
             toast.error('Failed to update raw material. Please try again.');
@@ -149,7 +149,7 @@ export default function RawMaterialsPage() {
             setStockQuantity(0);
 
             setDialogOpen(false);
-            return `Raw Material ${data.name} successfully created!`;
+            return `${data.name} successfully created!`;
           },
           error: (err) => {
             toast.error('Failed to create raw material. Please try again.');
